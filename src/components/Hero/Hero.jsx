@@ -1,5 +1,6 @@
 import React from "react";
-import arrow from "./../../assets/arrow-left.svg";
+import  arrowRight from './../../assets/arrow-left.svg'
+import  arrowLeft from './../../assets/arrow_left.svg'
 import Button from "../ui/Button";
 
 function Hero() {
@@ -19,8 +20,8 @@ function Hero() {
       <div className="pb-[30px] relative">
         <Button style="px-3 py-4 text-[18px]"/>
         <div className="flex gap-[170px] absolute top-0 left-[-100px]">
-        <img src={arrow} alt="arrow" className=" rotate-180" />
-        <img src={arrow} alt="arrow" />
+        <img src={arrowLeft} alt="arrow left"  />
+        <img src={arrowRight} alt="arrow right" />
         </div>
       </div>
     </section>

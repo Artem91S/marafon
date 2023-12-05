@@ -23,7 +23,7 @@ function Reviews() {
   // const navigationNextRef = React.useRef(null)
   const swiperRef = useRef();
   return (
-    <section className="flex flex-col items-center  py-6 bg-gray-400/5">
+    <section className="flex flex-col items-center  py-6 ">
       <h3 className="text-[24px]">Відгуки учасників</h3>
       <SwiperBlock/>
       </section>
