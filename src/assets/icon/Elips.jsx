@@ -3,15 +3,15 @@ import React from "react";
 function Elips(className) {
   return (
     <svg
-      className='absolute left-0 w-[300px]'
-      width="822"
-      height="898"
+      className={'absolute left-0 w-[300px] top-[5px] z-[-1]'}
+      width="300"
+      height="300"
       viewBox="0 0 822 898"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g opacity="0.13" filter="url(#filter0_f_256_946)">
-        <circle cx="326.5" cy="402.5" r="275.5" fill="#FA7515" />
+      <g opacity="0.33" filter="url(#filter0_f_256_946)">
+        <circle cx="326.5" cy="402.5" r="275.5" fill="#e5989b" />
       </g>
       <defs>
         <filter

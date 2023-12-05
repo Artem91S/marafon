@@ -4,8 +4,8 @@ import Button from "../ui/Button";
 
 function Hero() {
   return (
-    <section className="mx-6 flex flex-col items-center text-center gap-4">
-      <h1 className="text-[20px] pt-[40px] px-2">
+    <section className="px-3 flex flex-col items-center text-center gap-10 h-[90vh]">
+      <h1 className="text-[24px] pt-[20px] px-2">
         СХУДНИ ДО <span className=" text-btnColor font-bold">15 КГ</span> БЕЗ
         ДІЄТ, ПІДРАХУНКУ КАЛОРІЙ ЗА <span className="font-bold">21 ДЕНЬ</span>!
       </h1>
@@ -13,7 +13,7 @@ function Hero() {
         Віднови свій жіночий ресурс, зарядись енергією та схудни разом з
       </p>
       <div className="flex flex-col items-center gap-4">
-        <div className="w-[100px] h-[100px] rounded-full bg-[url('./assets/_2.jpg')] bg-cover bg-top " />
+        <div className="w-[100px] h-[100px] rounded-full bg-[url('./assets/_2.jpg')] bg-cover bg-top border-[4px] " />
         <p className="text-center">Анна Бурнышева </p>
       </div>
       <div className="pb-[30px] relative">

@@ -44,15 +44,15 @@ const mainSecrets=[
 
 function OurSecret() {
   return (
-    <section className=' mx-6 border-black flex flex-col items-center justify-center'>
-        <h2 className='py-10 text-center text-[25px]'>Секрет нашого підходу</h2>
-        {/* <Elips /> */}
+    <section className='px-3 py-10 border-black flex flex-col items-center justify-center relative'>
+        <h2 className='pb-10 text-center text-[24px]'>Секрет нашого підходу</h2>
+        {/* <Elips  /> */}
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-7 px-2'>
      
            {mainSecrets.map(post=>(
-            <div key={post.id} className='flex gap-2 justify-center items-center max-w-[400px]'>
+            <div key={post.id} className='flex gap-4 justify-center items-center max-w-[500px]'>
                 {post.icon}
-                <p className='flex-1 text-[14px]'>{post.text}</p>
+                <p className='flex-1 text-[20px]'>{post.text}</p>
             </div>
            ))}
         </div>
