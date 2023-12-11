@@ -5,7 +5,8 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Information from "./components/Information/Information";
 import OurSecret from "./components/OurSecret/OurSecret";
-import Reviews from "./components/Reviews/Reviews";
+// import Reviews from "./components/Reviews/Reviews";
+import ReviewsSecond from "./components/Reviews/ReviewsSecond";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <Information/>
       <About/>
       <FAQ/>
-      <Reviews/>
+      <ReviewsSecond/>
+      {/* <Reviews/> */}
       </main>
       <Footer/>
     </div>
