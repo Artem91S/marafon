@@ -50,39 +50,41 @@ const rew = [
     img: reviews8,
     text: "reviews",
   },
-  {
-    id: 9,
-    img: reviews9,
-    text: "reviews",
-  },
+  // {
+  //   id: 9,
+  //   img: reviews9,
+  //   text: "reviews",
+  // },
 ];
+{/* <ResponsiveMasonry   */}
+    // style={{
+    //     display: "flex",
+    //     justifyContent: "center",
+       
+    //   }}
+    // columnsCountBreakPoints={{ 350: 1, 500: 3, 900: 3 }}>
+    //   <Masonry  gutter="14px"
+    //     style={{
+    //       display: "flex",
+    //       justifyContent: "center",
+    //       flexWrap: "wrap",
+    //       alignItems: "start",
+    //     }}>
+   //   </Masonry>
+    // </ResponsiveMasonry>   //   </Masonry>
+    // </ResponsiveMasonry>
 
 function ReviewsSecond() {
   return (
-    // <div className="flex justify-center items-center">
-    <ResponsiveMasonry  
-    style={{
-        padding:'5% 10%',
-        display: "flex",
-        justifyContent: "center",
-       
-      }}
-    columnsCountBreakPoints={{ 350: 2, 750: 2, 900: 3 }}>
-      <Masonry  gutter="14px"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          flexWrap: "wrap",
-          alignItems: "start",
-        }}>
+    <div className=" overflow-y-scroll max-h-[300px]">
+
         {rew.map((item) => (
-          <div key={item.id} className="p-1  ">
-            <img src={item.img} alt={item.text} className="w-full h-full rounded-xl border-[2px] border-gray-400" />
+          <div key={item.id} className="p-1 ">
+            <img src={item.img} alt={item.text} className=" border-gray-400" />
           </div>
         ))}
-      </Masonry>
-    </ResponsiveMasonry>
-    // </div>
+ 
+    </div>
   );
 }
 
