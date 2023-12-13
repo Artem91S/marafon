@@ -8,7 +8,7 @@ import { GiPresent } from "react-icons/gi";
 import Elips from '../../assets/icon/Elips';
 
 
-const mainSecrets=[
+const mainEffects=[
     {
         id:1,
         text:'Авторська программа тренувань Анны Бурнышевой',
@@ -42,14 +42,14 @@ const mainSecrets=[
 
 ]
 
-function OurSecret() {
+function EffectiveProgram() {
   return (
     <section className='px-3 py-10 border-black flex flex-col items-center justify-center relative'>
         <h2 className='pb-10 text-center text-[24px]'>Секрет нашого підходу</h2>
         {/* <Elips  /> */}
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-7 px-2'>
      
-           {mainSecrets.map(post=>(
+           {mainEffects.map(post=>(
             <div key={post.id} className='flex gap-4 justify-center items-center max-w-[500px]'>
                 {post.icon}
                 <p className='flex-1 text-[20px]'>{post.text}</p>
@@ -60,4 +60,4 @@ function OurSecret() {
   )
 }
 
-export default OurSecret
+export default EffectiveProgram
