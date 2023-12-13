@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 function Hero() {
   const { t } = useTranslation();
   return (
-    <section className="px-3 flex flex-col justify-between items-center text-center gap-2 h-[90vh] box-border">
+    <section className="px-3 flex flex-col justify-between items-center text-center gap-2 h-[85vh] box-border">
       <div>
         <span className="text-[18px] py-[20px] px-2">
           {t("description.titleHero")}
