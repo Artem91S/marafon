@@ -6,9 +6,9 @@ import { useTranslation } from "react-i18next";
 function Hero() {
   const { t } = useTranslation();
   return (
-    <section className="px-3 flex flex-col justify-between items-center text-center gap-2 h-[85vh] box-border">
+    <section className="px-3 flex flex-col justify-between items-center text-center gap-2 h-[90vh] box-border pt-[20px]">
       <div>
-        <span className="text-[18px] py-[20px] px-2">
+        <span className="text-[18px] pb-[20px] px-2">
           {t("description.titleHero")}
         </span>
         <h1 className=" text-btnColor font-semibold text-3xl pt-[10px] pb-[50px]">
