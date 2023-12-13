@@ -28,7 +28,7 @@ const mainEffects=[
 function EffectiveProgram() {
     const { t } = useTranslation();
   return (
-    <section className='px-3 py-10 border-black flex flex-col justify-between items-center  relative h-[90vh]'>
+    <section className='px-3 py-10 border-black flex flex-col justify-between items-center  relative h-[100vh]'>
         <h2 className='pb-30 text-center text-[24px]'> {t("description.aboutIntensiveTitle")}</h2>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-7 px-2'>
      
