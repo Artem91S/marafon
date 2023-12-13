@@ -8,17 +8,17 @@ function Hero() {
   return (
     <section className="px-3 flex flex-col justify-between items-center text-center gap-2 h-[90vh] box-border pt-[20px]">
       <div>
-        <span className="text-[18px] pb-[20px] px-2">
+        <span className="text-[24px] pb-[20px] px-2">
           {t("description.titleHero")}
         </span>
-        <h1 className=" text-btnColor font-semibold text-3xl pt-[10px] pb-[50px]">
+        <h1 className=" text-btnColor font-semibold text-4xl pt-[10px] pb-[50px]">
           {t("description.subTitleHero")}
         </h1>
-        <p className="pb-[30px] text-[18px]"> {t("description.descriptionHero")}</p>
+        <p className="pb-[30px] text-[20px]"> {t("description.descriptionHero")}</p>
 
         <div className="flex flex-col items-center">
           <div className="w-[100px] h-[100px] rounded-full bg-[url('./assets/profilePhoto.jpg')] bg-cover bg-top border-[4px] " />
-          <p className="text-center pt-[30px]"> {t("description.AnnName")}</p>
+          <strong className="text-center text-[20px] font-medium pt-[30px]"> {t("description.AnnName")}</strong>
         </div>
       </div>
 
