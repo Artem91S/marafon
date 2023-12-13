@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 function Hero() {
   const { t } = useTranslation();
   return (
-    <section className="px-3 flex flex-col justify-between items-center text-center gap-2 h-[90vh] box-border pt-[20px]">
+    <section className="px-3 flex flex-col justify-between items-center text-center gap-2 box-border pt-[20px]">
       <div>
         <span className="text-[24px] pb-[20px] px-2">
           {t("description.titleHero")}
@@ -29,7 +29,7 @@ function Hero() {
           <img src={arrowRight} alt="arrow right" className="animate-pulse" />
         </div>
       </div>
-      <p className="text-black/30 text-[14px] pt-[5px]">
+      <p className="text-black/30 text-[14px] pt-7">
         {t("description.descriptionSloganHero")}
       </p>
     </section>
