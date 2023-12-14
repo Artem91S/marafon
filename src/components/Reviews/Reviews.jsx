@@ -15,6 +15,8 @@ import reviews14 from "../../assets/reviews/second/reviews14.png";
 import reviews15 from "../../assets/reviews/second/reviews15.png";
 import reviews16 from "../../assets/reviews/second/reviews16.png";
 import reviews17 from "../../assets/reviews/second/reviews17.png";
+import Container from "../ui/Container";
+import { useTranslation } from "react-i18next";
 
 const rew = [
   {
@@ -107,11 +109,13 @@ const rew = [
 
 
 function Reviews() {
-
+  const { t } = useTranslation();
 
   return (
-    <section className="flex flex-col items-center  py-6 ">
-      <h3 className="text-[24px]">Відгуки учасників</h3>
+    <Container
+    title={t("description.reviewsTitle")} >
+    {/* <section className="flex flex-col items-center  py-6 ">
+      <h3 className="text-[24px]">Відгуки учасників</h3> */}
       <div className="flex flex-col gap-4 items-center px-4 w-full max-h-[300px] overflow-y-scroll">
       {rew.map(item=>(
         <div key={item.id} className="max-w-[500px]">
@@ -119,7 +123,8 @@ function Reviews() {
         </div>
       ))}
       </div>
-      </section>
+      {/* </section> */}
+      </Container>
   );
 }
 

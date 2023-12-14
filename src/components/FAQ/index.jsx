@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { IoCaretDownCircleOutline } from "react-icons/io5";
 import { IoCaretUpCircleOutline } from "react-icons/io5";
 import { FiArrowRight } from "react-icons/fi";
-
-
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import Container from "../ui/Container";
 
 const questings = [
   {
@@ -37,11 +36,9 @@ export default function FAQ() {
 
   const textAnimation = {
     hidden: {
-      //   x: -10,
       opacity: 0,
     },
     visible: (custom) => ({
-      //   x: 0,
       opacity: 1,
 
     }),
@@ -64,8 +61,9 @@ export default function FAQ() {
   };
 
   return (
-    <section className="px-3 py-6 flex flex-col  gap-4 items-center">
-      <h3 className="text-center pb-4 text-[24px]">{t("description.FaqTitile")}</h3>
+    <Container
+    title={t("description.FaqTitile")}
+    >
       <div className="flex flex-col w-full border-t-[2px] border-b-[2px] gap-10 py-4 last:border-0 ">
         {questings.map((questing) => (
           <div
@@ -120,6 +118,6 @@ export default function FAQ() {
           </div>
         ))}
       </div>
-    </section>
+    </Container>
   );
 }

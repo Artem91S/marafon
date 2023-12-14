@@ -2,6 +2,7 @@ import React from "react";
 import { IoClose } from "react-icons/io5";
 import { GiCheckMark } from "react-icons/gi";
 import { useTranslation } from 'react-i18next'; 
+import Container from "../ui/Container";
 
 const successInform = [
   {
@@ -36,7 +37,7 @@ const cancelInform = [
 function Information() {
   const { t } = useTranslation();
   return (
-    <section className="px-6 py-6">
+    <Container>
       <div>
         <h3 className="text-[25px] pb-4 text-center">{t("description.successInformTitle")}</h3>
         <ul className="grid grid-cols-1 gap-4 pb-6">
@@ -66,7 +67,7 @@ function Information() {
       <p className="text-black/40 text-[12px] text-right pt-3">{t('description.informationSubdescription')}</p>
       <p className="text-black/40 text-[12px] font-bold text-right pt-3"> {t('description.AnnName')}</p>
       </div>
-    </section>
+      </Container>
   );
 }
 

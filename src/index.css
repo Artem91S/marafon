@@ -4,4 +4,18 @@
 
 body {
     font-family:Unbounded;
+    overflow-x:hidden;
 }
+*::-webkit-scrollbar {
+   @apply w-[6px] rounded-sm
+
+  }
+   
+  *::-webkit-scrollbar-track {
+    @apply bg-[#eee]
+    
+  }
+  *::-webkit-scrollbar-thumb {
+   @apply bg-btnColor rounded-sm;
+
+  }
