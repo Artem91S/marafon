@@ -1,12 +1,10 @@
-import arrowRight from "./../../assets/arrow-left.svg";
-import arrowLeft from "./../../assets/arrow_left.svg";
-import Button from "../ui/Button.jsx";
 import { useTranslation } from "react-i18next";
+import ActiveBlock from "../ui/ActiveBlock";
 
 function Hero() {
   const { t } = useTranslation();
   return (
-    <section className="px-3 flex flex-col justify-between items-center text-center gap-2 box-border pt-[20px]">
+    <section className="px-3 flex flex-col justify-between items-center text-center gap-2 box-border pt-[20px] pb-[50px]">
       <div>
         <span className="text-[24px] pb-[20px] px-2">
           {t("description.titleHero")}
@@ -18,17 +16,10 @@ function Hero() {
 
         <div className="flex flex-col items-center">
           <div className="w-[100px] h-[100px] rounded-full bg-[url('./assets/profilePhoto.jpg')] bg-cover bg-top border-[4px] " />
-          <strong className="text-center text-[20px] font-medium pt-[30px] "> {t("description.AnnName")}</strong>
+          <strong className="text-center text-[20px] font-medium pb-5 pt-[30px] "> {t("description.AnnName")}</strong>
         </div>
       </div>
-
-      <div className="relative">
-        <Button style="px-3 py-4 text-[18px] " />
-        <div className="flex gap-[170px] absolute top-0 left-[-100px]">
-          <img src={arrowLeft} alt="arrow left" className="animate-pulse" />
-          <img src={arrowRight} alt="arrow right" className="animate-pulse" />
-        </div>
-      </div>
+      <ActiveBlock/>
       <p className="text-black/30 text-[14px] pt-7">
         {t("description.descriptionSloganHero")}
       </p>

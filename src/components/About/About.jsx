@@ -1,32 +1,28 @@
 import React from "react";
-import Hero from "./../../assets/_1.png";
-import Clouds from "./../../assets/about_clouds.png";
+import Hero from "./../../assets/main.jpg";
+
 import { FaInstagram } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 function About() {
+  const { t } = useTranslation();
   return (
     <section className="mx-6">
-      <h3 className="text-[20px]">Твоя незмінна тренерка та засновниця</h3>
-      <div className="flex">
-        <div className=" relative  ">
-          <img src={Hero} alt="hero" />
-          <img src={Clouds} alt="cloud" className=" absolute bottom-0" />
-        </div>
-        <div className="flex-2">
-          <div className=" flex gap-3">
-            <FaInstagram className="text-[30px]"/>
-            <h3>Анна Бурнышева </h3>
-          </div>
-          <p className="text-[12px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-            dolores!
-          </p>
+      <h3 className="text-[20px]">{t("description.aboutTitle")}</h3>
+      <div className="flex flex-col">
+        <div className=" relative flex items-center justify-center  ">
+          <img src={Hero} alt="hero" className="max-h-[500px]" />
         </div>
       </div>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, ipsa sit
-        fugit quibusdam eveniet amet eius vero cum sapiente vel.
-      </p>
+      <h4>
+      {t("description.aboutSubTitle")}
+      </h4>
+      <div className="flex flex-col gap-3">
+      <p className=" text-[14px]"> {t("description.abouTextFirst")}</p>
+      <p className=" text-[14px]"> {t("description.abouTextSecond")}</p>
+      <p className=" text-[14px]"> {t("description.abouTextTheerd")}</p>
+      <p className=" text-[14px]"> {t("description.abouTextFourth")}</p>
+      </div>
     </section>
   );
 }
