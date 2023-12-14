@@ -14,10 +14,10 @@ function Hero() {
         </h1>
         <p className="pb-[30px] text-[20px]"> {t("description.descriptionHero")}</p>
 
-        <div className="flex flex-col items-center">
+        <a href="https://www.instagram.com/burnysheva_diet_trener/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target='_blank' className="flex flex-col items-center">
           <div className="w-[100px] h-[100px] rounded-full bg-[url('./assets/profilePhoto.jpg')] bg-cover bg-top border-[4px] " />
           <strong className="text-center text-[20px] font-medium pb-5 pt-[30px] "> {t("description.AnnName")}</strong>
-        </div>
+        </a>
       </div>
       <ActiveBlock/>
       <p className="text-black/30 text-[14px] pt-7">

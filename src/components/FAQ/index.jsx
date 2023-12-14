@@ -109,7 +109,7 @@ export default function FAQ() {
                 {t(`description.${questing.text}`)}
                 {questing.id==="1" && <>
                 <FiArrowRight className="text-[20px]"/>
-               <a href="https://t.me/Burnysheva" className="text-[18px] font-bold animate-pulse">
+               <a href="https://t.me/Burnysheva" target='_blank' className="text-[18px] font-bold animate-pulse">
                 {t("description.FagQuestingsFirstAnswerLink")}
                   </a>
                   </>
