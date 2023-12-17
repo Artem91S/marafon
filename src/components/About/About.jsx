@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Hero from "./../../assets/main.jpg";
+import Hero from "./../../assets/AnnaPhoto.jpg";
 import { useTranslation } from "react-i18next";
 import Container from "../ui/Container";
 import { useInView } from "react-intersection-observer";
