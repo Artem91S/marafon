@@ -28,8 +28,8 @@ function SwiperPagination() {
           swiperRef.current = swiper;
         }}
       >
-        <SwiperSlide className="w-[350px] max-h-[500px] flex justify-center ">
-          <img className="max-w-[500px] max-h-[500px] rounded-xl" src={test1} alt="poster1" />
+        <SwiperSlide className="  flex justify-center ">
+          <img className=" rounded-xl" src={test1} alt="poster1" />
         </SwiperSlide>
         <SwiperSlide className="max-w-[500px] max-h-[500px] flex justify-center">
           <img className="max-w-[500px] max-h-[500px] rounded-xl" src={test2} alt="poster3" />

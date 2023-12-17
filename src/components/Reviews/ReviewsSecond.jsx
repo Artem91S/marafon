@@ -21,20 +21,20 @@ function ReviewsSecond() {
       <span className="text-[22px] text-center">{t("description.reviewsTitle")}</span>
       <AiTwotoneNotification className="w-5 h-5 text-btnColor"/>
       </div>
-      <div className="flex overflow-x-scroll gap-7 pb-4 max-w-[300px]">
+      {/* <div className="flex overflow-x-scroll gap-7 pb-4 max-w-[300px]">
         <img src={test1} alt="photo" className="max-w-[500px] max-h-[500px]"/>
         <img src={test2} alt="photo" className="max-w-[500px] max-h-[500px]"/>
         <img src={test1} alt="photo" className="max-w-[500px] max-h-[500px]"/>
         <img src={test2} alt="photo" className="max-w-[500px] max-h-[500px]"/>
         
-      </div>
-      <div className="flex items-center gap-4 pt-4">
+      </div> */}
+      {/* <div className="flex items-center gap-4 pt-4">
       <p>Гортай праворуч </p>
         <AiOutlineDoubleRight/>
       </div>
       <p>другий варінт</p>
       <SwiperBlock/>
-      <hr/>
+      <hr/> */}
       <SwiperPagination/>
       {/* <div className="pt-6 max-w-[450px] relative ">
         <div>
