@@ -29,16 +29,16 @@ function SwiperPagination() {
         }}
       >
         <SwiperSlide className="w-[350px] max-h-[500px] flex justify-center ">
-          <img className="max-w-[500px] max-h-[500px]" src={test1} alt="poster1" />
+          <img className="max-w-[500px] max-h-[500px] rounded-xl" src={test1} alt="poster1" />
         </SwiperSlide>
         <SwiperSlide className="max-w-[500px] max-h-[500px] flex justify-center">
-          <img className="max-w-[500px] max-h-[500px]" src={test2} alt="poster3" />
+          <img className="max-w-[500px] max-h-[500px] rounded-xl" src={test2} alt="poster3" />
         </SwiperSlide>
         <SwiperSlide className="max-w-[500px] max-h-[500px] flex justify-center">
-          <img className="max-w-[500px] max-h-[500px]" src={test1} alt="poster3" />
+          <img className="max-w-[500px] max-h-[500px] rounded-xl" src={test1} alt="poster3" />
         </SwiperSlide>
         <SwiperSlide className="max-w-[500px] max-h-[500px] flex justify-center">
-          <img className="max-w-[500px] max-h-[500px]" src={test2} alt="poster3" />
+          <img className="max-w-[500px] max-h-[500px] rounded-xl" src={test2} alt="poster3" />
         </SwiperSlide>
       </Swiper>
       {/* <div className="flex w-full justify-between gap-5">
