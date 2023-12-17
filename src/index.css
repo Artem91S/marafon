@@ -19,3 +19,6 @@ body {
    @apply bg-btnColor rounded-sm;
 
   }
+  .swiper-pagination-bullet{
+    @apply w-2 bg-btnColor 
+  }

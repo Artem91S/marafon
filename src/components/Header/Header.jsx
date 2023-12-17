@@ -19,7 +19,10 @@ function Header() {
         <span className="text-[40px]">.</span>
         <span className="font-semibold text-[24px] text-btnColor">Б</span>
       </div> */}
-      <div className="p-2 flex justify-center items-center ">
+      <div className="px-2  gap-2 flex justify-center items-center border-[2px] border-black/40 rounded-xl cursor-pointer">
+        <p className=" uppercase text-black/40"> 
+          {lang}
+        </p>
         <img
           src={lang === "ru" ? EN : UA}
           alt={lang === "ru" ? "Russian" : "Ukraine"}

@@ -11,12 +11,12 @@ import AboutIntensive from "./components/AboutIntensive";
 
 function App() {
   return (
-    <div className="">
+    <>
       <Header/>
       <main>
       <Hero/>
-      <AboutIntensive/>
       <ReviewsSecond/>
+      <AboutIntensive/>
       <EffectiveProgram/>
       <Information/>
       <About/>
@@ -24,7 +24,7 @@ function App() {
       <Reviews/>
       </main>
       <Footer/>
-    </div>
+    </>
   );
 }
 
