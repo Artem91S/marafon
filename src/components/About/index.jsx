@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import Container from "../ui/Container";
 import { useInView } from "react-intersection-observer";
 import Modal from "../ui/Modal";
-
+import { linkInsta } from "../utils/variables";
 
 function About() {
   const { t } = useTranslation();
@@ -13,20 +13,20 @@ function About() {
   });
   
   const [showModal, setShowModal]=useState(false)
-  useEffect(()=>{
-    if(inView){
-      setTimeout(()=>{
-        setShowModal(true)
-        document.body.style.overflow='hidden'
-      },1000)
+  // useEffect(()=>{
+  //   if(inView){
+  //     setTimeout(()=>{
+  //       setShowModal(true)
+  //       document.body.style.overflow='hidden'
+  //     },1000)
       
-    }
-    else{
-      setShowModal(false)
-      document.body.style.overflow='visible'
-    }
+  //   }
+  //   else{
+  //     setShowModal(false)
+  //     document.body.style.overflow='visible'
+  //   }
   
-  },[inView])
+  // },[inView])
 
   return (
     <Container
@@ -35,9 +35,9 @@ function About() {
     >
       <div ref={ref} >
       <div className="flex flex-col">
-        <div className=" relative flex items-center justify-center  ">
-          <img src={Hero} alt="hero" className="max-h-[500px]" />
-        </div>
+        <a href={linkInsta} target='_blank' className=" relative flex items-center justify-center  ">
+          <img src={Hero} alt="hero" className="max-h-[500px] rounded-xl" />
+        </a>
       </div>
       <h4 className="py-4 text-[18px]">
       {t("description.aboutSubTitle")}
@@ -48,7 +48,7 @@ function About() {
       <p className=" text-[14px]"> {t("description.abouTextTheerd")}</p>
       <p className=" text-[14px]"> {t("description.abouTextFourth")}</p>
       </div>
-   {showModal? <Modal setShowModal={setShowModal} /> :null }
+   {/* {showModal? <Modal setShowModal={setShowModal} /> :null } */}
       </div>
     </Container>
   );

@@ -3,7 +3,7 @@ import { IoClose } from "react-icons/io5";
 import { GiCheckMark } from "react-icons/gi";
 import { useTranslation } from 'react-i18next'; 
 import Container from "../ui/Container";
-
+import { linkInsta } from "../utils/variables";
 const successInform = [
   {
     id: 1,
@@ -65,7 +65,7 @@ function Information() {
       </p>
       <div>
       <p className="text-black/40 text-[12px] text-right pt-3">{t('description.informationSubdescription')}</p>
-      <p className="text-black/40 text-[12px] font-bold text-right pt-3"> {t('description.AnnName')}</p>
+      <a href={linkInsta} target='_blank' className="text-black/40 hover:text-black/70 text-[12px] font-bold text-right pt-3"> {t('description.AnnName')}</a>
       </div>
       </Container>
   );

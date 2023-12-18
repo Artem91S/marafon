@@ -27,7 +27,7 @@ function AboutIntensive() {
   return (
     <Container
       title={t("description.aboutIntensiveTitle")}
-      classNameBlock={"bg-gradient-to-b from-white to-[#eee] border-black "}
+      classNameBlock={"bg-[#eee] border-black "}
       classNameTittle={"border-b-[2px]"}
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 px-2">

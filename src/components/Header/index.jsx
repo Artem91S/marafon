@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Button from "../ui/Button";
+import Button from "../ui/Button.jsx";
 import { useTranslation } from "react-i18next";
 import i18n from "../../Language.js";
 import EN from "./../../assets/en.png";
@@ -14,19 +14,17 @@ function Header() {
   }, [lang]);
   return (
     <header className="flex justify-between  border-b-[1px] item-center p-3 sticky top-0 backdrop-blur-md w-full z-10">
-      {/* <div>
-        <span className=" font-semibold text-[24px]">A</span>
-        <span className="text-[40px]">.</span>
-        <span className="font-semibold text-[24px] text-btnColor">Б</span>
-      </div> */}
-      <div className="px-2  gap-2 flex justify-center items-center border-[2px] border-black/40 rounded-xl cursor-pointer">
+   
+      <div 
+       onClick={(e) => setLang(lang === "ru" ? "ua" : "ru")}
+      className="px-2  gap-2 flex justify-center items-center border-[2px] border-black/40 rounded-xl cursor-pointer">
         <p className=" uppercase text-black/40"> 
           {lang}
         </p>
         <img
           src={lang === "ru" ? EN : UA}
           alt={lang === "ru" ? "Russian" : "Ukraine"}
-          onClick={(e) => setLang(lang === "ru" ? "ua" : "ru")}
+         
         />
       </div>
 

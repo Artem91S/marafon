@@ -4,8 +4,7 @@ import "swiper/swiper-bundle.css";
 
 import { IoCaretBackCircle } from "react-icons/io5";
 import { IoCaretForwardCircle } from "react-icons/io5";
-// import test1 from '../../assets/testing1.jpeg'
-// import test2 from '../../assets/testing2.jpeg'
+
 
 
 function SwiperBlock() {

@@ -5,6 +5,7 @@ import { FiArrowRight } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Container from "../ui/Container";
+import { lingTelega } from '../utils/variables.js'
 
 const questings = [
   {
@@ -107,7 +108,7 @@ export default function FAQ() {
                 {t(`description.${questing.text}`)}
                 {questing.id==="1" && <>
                 <FiArrowRight className="text-[20px]"/>
-               <a href="https://t.me/Burnysheva" target='_blank' className="text-[18px] font-bold animate-pulse">
+               <a href={lingTelega} target='_blank' className="text-[18px] font-bold animate-pulse">
                 {t("description.FagQuestingsFirstAnswerLink")}
                   </a>
                   </>

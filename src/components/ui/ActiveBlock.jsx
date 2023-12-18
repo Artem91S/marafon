@@ -4,10 +4,11 @@ import Button from "../ui/Button.jsx";
 function ActiveBlock() {
   return (
     <div className="relative flex items-center  justify-center">
-        <Button style="px-3 py-4 text-[18px] " />
-        <div className="flex gap-[175px] absolute top-0 left-[-100px]">
-          <img src={arrowLeft} alt="arrow left" className="animate-pulse" />
-          <img src={arrowRight} alt="arrow right" className="animate-pulse" />
+       
+        <div className="flex gap-3 justify-center items-center ">
+          <img src={arrowLeft} alt="arrow left" className="animate-pulse w-[60px]" cl />
+          <Button style="px-2 py-3 text-[18px] z-1 " />
+          <img src={arrowRight} alt="arrow right" className="animate-pulse w-[60px]" />
         </div>
       </div>
   )
