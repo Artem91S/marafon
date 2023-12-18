@@ -1,7 +1,4 @@
-import reviews3 from "../../assets/reviews/second/reviews3.png";
-import reviews4 from "../../assets/reviews/second/reviews4.png";
-import reviews7 from "../../assets/reviews/second/reviews7.png";
-import reviews8 from "../../assets/reviews/second/reviews8.png";
+
 import { AiTwotoneNotification } from "react-icons/ai";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 
@@ -9,8 +6,7 @@ import { useTranslation } from "react-i18next";
 import Container from "../ui/Container";
 import SwiperBlock from "./Swiper";
 import SwiperPagination from "./SwiperPagination";
-import test1 from '../../assets/testing1.jpeg'
-import test2 from '../../assets/testing2.jpeg'
+
 
 function ReviewsSecond() {
   const { t } = useTranslation();

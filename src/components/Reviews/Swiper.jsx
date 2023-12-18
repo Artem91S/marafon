@@ -1,14 +1,11 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import reviews3 from "../../assets/reviews/second/reviews3.png";
-import reviews4 from "../../assets/reviews/second/reviews4.png";
-import reviews7 from "../../assets/reviews/second/reviews7.png";
-import reviews8 from "../../assets/reviews/second/reviews8.png";
+
 import { IoCaretBackCircle } from "react-icons/io5";
 import { IoCaretForwardCircle } from "react-icons/io5";
-import test1 from '../../assets/testing1.jpeg'
-import test2 from '../../assets/testing2.jpeg'
+// import test1 from '../../assets/testing1.jpeg'
+// import test2 from '../../assets/testing2.jpeg'
 
 
 function SwiperBlock() {

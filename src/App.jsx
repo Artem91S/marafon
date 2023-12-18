@@ -21,7 +21,7 @@ function App() {
       <Information/>
       <About/>
       <FAQ/>
-      <Reviews/>
+      {/* <Reviews/> */}
       </main>
       <Footer/>
     </>
