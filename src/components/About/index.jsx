@@ -13,20 +13,20 @@ function About() {
   });
   
   const [showModal, setShowModal]=useState(false)
-  // useEffect(()=>{
-  //   if(inView){
-  //     setTimeout(()=>{
-  //       setShowModal(true)
-  //       document.body.style.overflow='hidden'
-  //     },1000)
+  useEffect(()=>{
+    if(inView){
+      setTimeout(()=>{
+        setShowModal(true)
+        document.body.style.overflow='hidden'
+      },1000)
       
-  //   }
-  //   else{
-  //     setShowModal(false)
-  //     document.body.style.overflow='visible'
-  //   }
+    }
+    else{
+      setShowModal(false)
+      document.body.style.overflow='visible'
+    }
   
-  // },[inView])
+  },[inView])
 
   return (
     <Container
@@ -48,7 +48,7 @@ function About() {
       <p className=" text-[14px]"> {t("description.abouTextTheerd")}</p>
       <p className=" text-[14px]"> {t("description.abouTextFourth")}</p>
       </div>
-   {/* {showModal? <Modal setShowModal={setShowModal} /> :null } */}
+   {showModal? <Modal setShowModal={setShowModal} /> :null }
       </div>
     </Container>
   );
