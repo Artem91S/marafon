@@ -5,6 +5,27 @@ import "swiper/swiper-bundle.css";
 import "swiper/css/pagination";
 
 import review1 from '../../assets/reviews/review_1.jpg';
+import review2 from '../../assets/reviews/review_2.jpg';
+import review3 from '../../assets/reviews/review_3.jpg';
+import review4 from '../../assets/reviews/review_4.jpg';
+import review5 from '../../assets/reviews/review_5.jpg';
+import review6 from '../../assets/reviews/review_6.jpg';
+import review7 from '../../assets/reviews/review_7.jpg';
+import review8 from '../../assets/reviews/review_8.jpg';
+import review9 from '../../assets/reviews/review_9.jpg';
+import review10 from '../../assets/reviews/review_10.jpg';
+import review11 from '../../assets/reviews/review_11.jpg';
+import review12 from '../../assets/reviews/review_12.jpg';
+import review13 from '../../assets/reviews/review_13.jpg';
+import review14 from '../../assets/reviews/review_14.jpg';
+import review15 from '../../assets/reviews/review_15.jpg';
+import review16 from '../../assets/reviews/review_16.jpg';
+import review17 from '../../assets/reviews/review_17.jpg';
+import review18 from '../../assets/reviews/review_18.jpg';
+import review19 from '../../assets/reviews/review_19.jpg';
+import review20 from '../../assets/reviews/review_20.jpg';
+import review21 from '../../assets/reviews/review_21.jpg';
+import review22 from '../../assets/reviews/review_22.jpeg';
 
 const sliders = [
   {
@@ -13,89 +34,89 @@ const sliders = [
   },
   {
     id: "2",
-    img: review1,
+    img: review2,
   },
-  // {
-  //   id: "3",
-  //   img: "bg-[url('./assets/reviews/review_3.jpg')]",
-  // },
-  // {
-  //   id: "4",
-  //   img: "bg-[url('./assets/reviews/review_4.jpg')]",
-  // },
-  // {
-  //   id: "5",
-  //   img: "bg-[url('./assets/reviews/review_5.jpg')]",
-  // },
-  // {
-  //   id: "6",
-  //   img: "bg-[url('./assets/reviews/review_6.jpg')]",
-  // },
-  // {
-  //   id: "7",
-  //   img: "bg-[url('./assets/reviews/review_7.jpg')]",
-  // },
-  // {
-  //   id: "8",
-  //   img: "bg-[url('./assets/reviews/review_8.jpg')]",
-  // },
-  // {
-  //   id: "9",
-  //   img: "bg-[url('./assets/reviews/review_9.jpg')]",
-  // },
-  // {
-  //   id: "10",
-  //   img: "bg-[url('./assets/reviews/review_10.jpg')]",
-  // },
-  // {
-  //   id: "11",
-  //   img: "bg-[url('./assets/reviews/review_11.jpg')]",
-  // },
-  // {
-  //   id: "12",
-  //   img: "bg-[url('./assets/reviews/review_12.jpg')]",
-  // },
-  // {
-  //   id: "13",
-  //   img: "bg-[url('./assets/reviews/review_13.jpg')]",
-  // },
-  // {
-  //   id: "14",
-  //   img: "bg-[url('./assets/reviews/review_14.jpg')]",
-  // },
-  // {
-  //   id: "15",
-  //   img: "bg-[url('./assets/reviews/review_15.jpg')]",
-  // },
+  {
+    id: "3",
+    img: review3,
+  },
+  {
+    id: "4",
+    img: review4,
+  },
+  {
+    id: "5",
+    img: review5,
+  },
+  {
+    id: "6",
+    img: review6,
+  },
+  {
+    id: "7",
+    img: review7,
+  },
+  {
+    id: "8",
+    img: review8,
+  },
+  {
+    id: "9",
+    img: review9,
+  },
+  {
+    id: "10",
+    img: review10,
+  },
+  {
+    id: "11",
+    img: review11,
+  },
+  {
+    id: "12",
+    img: review12,
+  },
+  {
+    id: "13",
+    img: review13,
+  },
+  {
+    id: "14",
+    img: review14,
+  },
+  {
+    id: "15",
+    img: review15,
+  },
 
-  // {
-  //   id: "16",
-  //   img: "bg-[url('./assets/reviews/review_16.jpg')]",
-  // },
-  // {
-  //   id: "17",
-  //   img: "bg-[url('./assets/reviews/review_17.jpg')]",
-  // },
-  // {
-  //   id: "18",
-  //   img: "bg-[url('./assets/reviews/review_18.jpg')]",
-  // },
-  // {
-  //   id: "19",
-  //   img: "bg-[url('./assets/reviews/review_19.jpg')]",
-  // },
-  // {
-  //   id: "20",
-  //   img: "bg-[url('./assets/reviews/review_20.jpg')]",
-  // },
-  // {
-  //   id: "21",
-  //   img: "bg-[url('./assets/reviews/review_21.jpg')]",
-  //   },
-  // {
-  //   id: "22",
-  //   img: "bg-[url('./assets/reviews/review_22.jpeg')]",
-  // },
+  {
+    id: "16",
+    img: review16,
+  },
+  {
+    id: "17",
+    img: review17,
+  },
+  {
+    id: "18",
+    img: review18,
+  },
+  {
+    id: "19",
+    img: review19,
+  },
+  {
+    id: "20",
+    img: review20,
+  },
+  {
+    id: "21",
+    img: review21,
+    },
+  {
+    id: "22",
+    img: review22,
+  },
 ];
 
 function SwiperPagination() {
@@ -115,9 +136,9 @@ function SwiperPagination() {
           <SwiperSlide
             key={item.img}
        
-            className={` flex justify-center items-center  bg-cover  rounded-xl`}
+            className={`flex justify-center mb-10`}
           >
-            <img className='max-h-[700px] rounded-xl'src={review1} alt="reviews" />
+            <img className='max-h-[700px] rounded-xl'src={item.img} alt="reviews" />
           </SwiperSlide>
           
         ))}
