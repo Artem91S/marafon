@@ -16,7 +16,11 @@ const successInform = [
   },
   {
     id: 3,
-    text: 'successInformTextTheerd',
+    text: 'successInformTextThird',
+  },
+  {
+    id: 4,
+    text: 'successInformTextFourth',
   },
 ];
 
@@ -31,14 +35,14 @@ const cancelInform = [
   },
   {
     id: 3,
-    text: 'cancelInformTextTheerd',
+    text: 'cancelInformTextThird',
   },
 ];
 
 function Information() {
   const { t } = useTranslation();
   return (
-    <Container classNameBlock={'gap-3'}>
+    <Container classNameBlock={'gap-3 bg-[#eee]'}>
       <ListOfProperties
       data={successInform}
       icon={<GiCheckMark className="text-[30px] md:text-[40px] " />}

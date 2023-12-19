@@ -16,9 +16,9 @@ function App() {
       <main>
       <Hero/>
       <ReviewsSecond/>
+      <Information/>
       <AboutIntensive/>
       <EffectiveProgram/>
-      <Information/>
       <About/>
       <FAQ/>
       <Reviews/>

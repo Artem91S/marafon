@@ -8,13 +8,13 @@ function Hero() {
   return (
     <section className="px-3 md:px-8 flex flex-col justify-between items-center text-center gap-2 md:gap-10 box-border pt-[20px] md:pt-[50px] pb-[50px]">
       <div>
-        <span className="text-[24px] md:text-[26px] pb-[20px] px-2">
+        <span className="text-[24px] md:text-[26px] pb-[20px] px-2 lg:text-[28px]">
           {t("description.titleHero")}
         </span>
-        <h1 className=" text-btnColor font-semibold text-4xl md:text-[40px] pt-[10px] md:pt-[20px] pb-[30px]">
+        <h1 className=" text-btnColor font-semibold text-4xl md:text-[40px] pt-[10px] md:pt-[20px] pb-[30px] lg:text-[44px]">
           {t("description.subTitleHero")}
         </h1>
-        <p className="pb-[30px] md:pb-[40px] text-[20px] md:text-[22px]"> {t("description.descriptionHero")}</p>
+        <p className="pb-[30px] text-[20px] md:pb-[40px] md:text-[22px] lg:text-[26px]"> {t("description.descriptionHero")}</p>
 
         <a href="https://www.instagram.com/burnysheva_diet_trener/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target='_blank' className="flex flex-col items-center">
           {/* <div className="w-[100px] h-[100px] rounded-full bg-[url('./assets/profilePhoto.jpg')] bg-cover bg-top border-[4px]  " /> */}
@@ -25,7 +25,7 @@ function Hero() {
         </a>
       </div>
       <ActiveBlock/>
-      <p className="text-black/30 text-[14px] md:text-[18px] pt-7 md:pt-14">
+      <p className="text-black/30 text-[14px] pt-7 md:text-[18px] md:pt-14 lg:text-[20px]">
         {t("description.descriptionSloganHero")}
       </p>
     </section>
