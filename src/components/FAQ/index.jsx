@@ -74,7 +74,7 @@ export default function FAQ() {
             id={questing.id}
           >
             <div className="flex justify-between ">
-              <p className="max-w-[300px] text-xl">{t(`description.${questing.title}`)}
+              <p className="max-w-[300px] sm:max-w-[500px] md:max-w-[700px] text-xl md:text-[24px]">{t(`description.${questing.title}`)}
               </p>
 
               {!showAnswer.includes(questing.id) ? (
@@ -84,7 +84,7 @@ export default function FAQ() {
                   whileInView="visible"
                   exit="hidden"
                 >
-                  <IoCaretDownCircleOutline className="w-[30px] h-[30px]" />
+                  <IoCaretDownCircleOutline className="w-[30px] md:w-[40px] h-[30px] md:h-[40px]" />
                 </motion.div>
               ) : (
                 <motion.div
@@ -93,7 +93,7 @@ export default function FAQ() {
                   whileInView="visible"
                   exit="hidden"
                 >
-                  <IoCaretUpCircleOutline className="w-[30px] h-[30px]" />
+                  <IoCaretUpCircleOutline className="w-[30px] md:w-[40px] h-[30px] md:h-[40px]" />
                 </motion.div>
               )}
             </div>
@@ -103,12 +103,12 @@ export default function FAQ() {
                 initial="hidden"
                 whileInView="visible"
                 exit="hidden"
-                className="flex gap-3 items-center text-sm text-black/40 pt-4"
+                className="flex gap-3 items-center text-sm md:text-[18px] md:leading-7 text-black/40 pt-4"
               >
                 {t(`description.${questing.text}`)}
                 {questing.id==="1" && <>
                 <FiArrowRight className="text-[20px]"/>
-               <a href={lingTelega} target='_blank' className="text-[18px] font-bold animate-pulse">
+               <a href={lingTelega} target='_blank' className="text-[14px] md:text-[18px] font-bold animate-pulse">
                 {t("description.FagQuestingsFirstAnswerLink")}
                   </a>
                   </>

@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useMediaQuery } from 'react-responsive'
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -7,12 +8,13 @@ import { sliders } from "./PostersList";
 
 function SwiperPagination() {
   const swiperRef = useRef();
+  const isMediumScreen = useMediaQuery({ query: '(min-width: 768px)' })
   return (
     <>
       <Swiper
         modules={[Pagination]}
         className="w-full py-10"
-        slidesPerView={1}
+        slidesPerView={isMediumScreen ? 1.3 :1}
         pagination={{ clickable: true }}
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;

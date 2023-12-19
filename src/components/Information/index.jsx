@@ -4,6 +4,7 @@ import { GiCheckMark } from "react-icons/gi";
 import { useTranslation } from 'react-i18next'; 
 import Container from "../ui/Container";
 import { linkInsta } from "../utils/variables";
+import ListOfProperties from "./ListOfProperties";
 const successInform = [
   {
     id: 1,
@@ -37,35 +38,21 @@ const cancelInform = [
 function Information() {
   const { t } = useTranslation();
   return (
-    <Container>
-      <div>
-        <h3 className="text-[25px] pb-4 text-center">{t("description.successInformTitle")}</h3>
-        <ul className="grid grid-cols-1 gap-4 pb-6">
-          {successInform.map((item) => (
-            <li className="flex gap-4" key={item.id}>
-              <GiCheckMark className="text-[30px]" />
-              <span className="w-[320px] text-[14px]">{t(`description.${item.text}`)}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div>
-        <h3 className="text-[25px] pb-4 pt-5 text-center">{t("description.cancelInformTitle")}</h3>
-        <ul className="grid grid-cols-1 gap-4 pb-6">
-          {cancelInform.map((item) => (
-            <li className="flex gap-2 " key={item.id}>
-              <IoClose className="text-[30px]" />
-              <span className="w-[320px] text-[14px]"> {t(`description.${item.text}`)}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <p className="text-black/40 text-[12px]">*
-      {t('description.informationDescription')}
+    <Container classNameBlock={'gap-3'}>
+      <ListOfProperties
+      data={successInform}
+      icon={<GiCheckMark className="text-[30px] md:text-[40px] " />}
+      />
+       <ListOfProperties
+      data={cancelInform}
+      icon={<IoClose className="text-[30px] md:text-[40px]" />}
+      />    
+      <p className="text-black/40 text-[12px] sm:text-[16px] md:text-[18px] max-w-[400px] sm:max-w-[640px] md:max-w-[750px] ">
+        *{t('description.informationDescription')}
       </p>
-      <div>
-      <p className="text-black/40 text-[12px] text-right pt-3">{t('description.informationSubdescription')}</p>
-      <a href={linkInsta} target='_blank' className="text-black/40 hover:text-black/70 text-[12px] font-bold text-right pt-3"> {t('description.AnnName')}</a>
+      <div className="flex flex-col items-end sm:pt-5 md:pt-10 sm:w-full">
+      <p className="text-black/40 text-[12px] sm:text-[16px] md:text-[18px]  pt-3">{t('description.informationSubdescription')}</p>
+      <a href={linkInsta} target='_blank' className="text-black/40 hover:text-black/70 text-[12px] sm:text-[16px] md:text-[18px] font-bold pt-3"> {t('description.AnnName')}</a>
       </div>
       </Container>
   );

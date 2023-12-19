@@ -14,7 +14,7 @@ function Footer() {
           href={linkInsta}
           className="flex flex-col p-2 gap-2 justify-center items-center hover:text-black/40 "
         >
-          <FaInstagram className="w-[50px] h-[50px]  " />
+          <FaInstagram className="w-[50px] h-[50px] md:w-[70px] md:h-[70px]" />
           <h4>{t("description.FooterTitle")}</h4>
         </a>
         <a
@@ -22,12 +22,12 @@ function Footer() {
           href={lingTelega}
           className="flex flex-col gap-2 justify-center items-center hover:text-black/40 "
         >
-          <FaTelegram className="w-[50px] h-[50px]  " />
+          <FaTelegram className="w-[50px] h-[50px] md:w-[70px] md:h-[70px]  " />
           <h4 className="">{t("description.FooterSubTitle")}</h4>
         </a>
       </div>
 
-      <a href={linkInsta} target="_blank" className="font-bold hover:text-black/40">
+      <a href={linkInsta} target="_blank" className="font-bold hover:text-black/40 text-[20px]">
         {t("description.AnnName")}
       </a>
       <ActiveBlock />
