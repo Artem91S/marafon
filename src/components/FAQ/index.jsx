@@ -63,9 +63,10 @@ export default function FAQ() {
 
   return (
     <Container
+
     title={t("description.FaqTitile")}
     >
-      <div className="flex flex-col w-full border-t-[2px] border-b-[2px] gap-10 py-4 last:border-0 ">
+      <div className="flex flex-col w-full border-t-[2px] border-b-[2px] gap-10 py-4 last:border-0 px-4 sm:px-6 md:px-10 lg:px-16">
         {questings.map((questing) => (
           <div
             key={questing.id}

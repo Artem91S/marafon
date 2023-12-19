@@ -5,6 +5,7 @@ import Container from "../ui/Container";
 import { useInView } from "react-intersection-observer";
 import Modal from "../ui/Modal";
 import { linkInsta } from "../utils/variables";
+import Shape from "../../assets/shape";
 
 function About() {
   const { t } = useTranslation();
@@ -30,7 +31,8 @@ function About() {
 
   return (
     <Container>
-      <div className="pb-4">
+      <div className="pb-4 relative">
+        <div className=" bg-btnColor/30 rounded-xl h-[600px] w-[400px] absolute top-[-20px] right-[100px]"/>
       <div className="flex flex-col ">
         <a href={linkInsta} target='_blank' className=" relative flex items-center justify-center  ">
           <img src={Hero} alt="hero" className="max-h-[500px] sm:max-h-[600px] rounded-xl" />

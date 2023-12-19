@@ -44,12 +44,14 @@ function Information() {
   return (
     <Container classNameBlock={'gap-3 bg-[#eee]'}>
       <ListOfProperties
+      title={t("description.successInformTitle")}
       data={successInform}
-      icon={<GiCheckMark className="text-[30px] md:text-[40px] " />}
+      icon={<GiCheckMark className="text-[20px] sm:text-[30px] " />}
       />
        <ListOfProperties
+      title={t("description.cancelInformTitle")}
       data={cancelInform}
-      icon={<IoClose className="text-[30px] md:text-[40px]" />}
+      icon={<IoClose className="text-[20px] sm:text-[30px] " />}
       />    
       <p className="text-black/40 text-[12px] sm:text-[16px] md:text-[18px] max-w-[400px] sm:max-w-[640px] md:max-w-[750px] ">
         *{t('description.informationDescription')}
