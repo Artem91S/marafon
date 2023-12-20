@@ -39,7 +39,7 @@ function AboutIntensive() {
             <div className="flex flex-col items-center justify-center h-full">
             <AiOutlineCaretRight className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] text-btnColor" />
             </div>
-            <p className="flex-1 text-[16px] py-3 sm:text-[18px]  lg:leading-10">
+            <p className="flex-1 text-[16px] py-3  lg:leading-10">
               {t(`description.${post.text}`)}
             </p>
           </div>

@@ -14,7 +14,7 @@ function SwiperPagination() {
     <>
       <Swiper
         modules={[Pagination]}
-        className="max-w-[320px] py-10 sm:max-w-[620px] md:max-w-[720px] lg:max-w-[900px]"
+        className="max-w-[320px] py-10 sm:max-w-[620px] md:max-w-[720px]"
         slidesPerView={isMediumScreen ? isBigScreen ? 2: 1.3 :1}
         pagination={{ clickable: true }}
         onBeforeInit={(swiper) => {
@@ -24,9 +24,9 @@ function SwiperPagination() {
         {sliders.map((item) => (
           <SwiperSlide
             key={item.img}
-            className={`flex  justify-center mb-10`}
+            className={`flex justify-center mb-10`}
           >
-            <img className='max-h-[800px] lg:max-h-[750px] rounded-xl'src={item.img} alt="reviews" />
+            <img className='max-h-[800px] lg:max-h-[600px] rounded-xl'src={item.img} alt="reviews" />
           </SwiperSlide>
           
         ))}
