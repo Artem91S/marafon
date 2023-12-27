@@ -67,7 +67,51 @@ export const sliders = [
       id: "11",
       img: review11,
     },
-    
+    {
+      id: "12",
+      img: review12,
+    },
+    {
+      id: "13",
+      img: review13,
+    },
+    {
+      id: "14",
+      img: review14,
+    },
+    {
+      id: "15",
+      img: review15,
+    },
+  
+    {
+      id: "16",
+      img: review16,
+    },
+    {
+      id: "17",
+      img: review17,
+    },
+    {
+      id: "18",
+      img: review18,
+    },
+    {
+      id: "19",
+      img: review19,
+    },
+    {
+      id: "20",
+      img: review20,
+    },
+    {
+      id: "21",
+      img: review21,
+      },
+    {
+      id: "22",
+      img: review22,
+    },
     
   ];
   

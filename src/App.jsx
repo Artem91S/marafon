@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Information from "./components/Information";
 import EffectiveProgram from "./components/EffectiveProgram";
-import Reviews from "./components/Reviews/Reviews";
+// import Reviews from "./components/Reviews/Reviews";
 import ReviewsSecond from "./components/Reviews/ReviewsSecond";
 import AboutIntensive from "./components/AboutIntensive";
 import { useMediaQuery } from 'react-responsive'
@@ -27,7 +27,7 @@ function App() {
           <EffectiveProgram />
           <About />
           <FAQ />
-          <Reviews />
+          {/* <Reviews /> */}
         </div>
         <div className="hidden lg:block bg-gradient-to-b from-btnColor/50 to-btnColor/5 col-span-1"></div>
       </main>
