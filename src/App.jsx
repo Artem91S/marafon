@@ -12,14 +12,15 @@ function App() {
 
   return (
     <>
-      <Header />
-      <MainContainer>
+      {/* <MainContainer> */}
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/offer-contract" element={<OfferContract />} />
+          <Route path="/" element={<MainContainer />}>
+            <Route index element={<HomePage />} />
+            <Route path="/offer-contract" element={<OfferContract />} />
+          </Route>
         </Routes>
-      </MainContainer>
-      {isBigScreen ? <FooterBigScreen /> : <Footer />}
+      {/* </MainContainer> */}
+ 
     </>
   );
 }
