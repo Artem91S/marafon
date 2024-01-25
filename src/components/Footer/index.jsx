@@ -35,8 +35,8 @@ function Footer() {
    
         <div className="">
 
-          <a href='/offer-contract'  className=" text-btnColor/40 cursor-pointer ">{t("description.PolisyConf")}</a>
-          <p className="text-btnColor/40 ">{t("description.PublickOffert")}</p>
+          <p  className=" text-btnColor/40 cursor-pointer ">{t("description.PolisyConf")}</p>
+          <a  href='/offer-contract'  className="text-btnColor/40 cursor-pointer  ">{t("description.PublickOffert")}</a>
         </div>
         <div className="text-[14px] text-center text-black/30 ">
           <span>© 2023 </span>
