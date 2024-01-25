@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../Header";
 import { Outlet } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
-
+import FooterBigScreen from '../Footer/FooterBigScreen'
+import Footer from '../Footer'
 function MainContainer({ children }) {
   const isBigScreen = useMediaQuery({ query: "(min-width: 1024px)" });
   return (
