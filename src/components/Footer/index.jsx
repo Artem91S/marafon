@@ -35,7 +35,7 @@ function Footer() {
    
         <div className="">
 
-          <a href='https://marafon-rosy.vercel.app/offer-contract' target='_blank' className=" text-btnColor/40 cursor-pointer ">{t("description.PolisyConf")}</a>
+          <a href='/offer-contract'  className=" text-btnColor/40 cursor-pointer ">{t("description.PolisyConf")}</a>
           <p className="text-btnColor/40 ">{t("description.PublickOffert")}</p>
         </div>
         <div className="text-[14px] text-center text-black/30 ">

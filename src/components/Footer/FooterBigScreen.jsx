@@ -33,7 +33,7 @@ function FooterBigScreen() {
  
       <div className="flex flex-col gap-4">
         <p className=" text-btnColor/50 ">{t("description.PolisyConf")}</p>
-        <a href='/offer-contract' target='_blank' className="text-btnColor/50 cursor-pointer ">{t("description.PublickOffert")}</a>
+        <a href='/offer-contract' className="text-btnColor/50 cursor-pointer ">{t("description.PublickOffert")}</a>
       </div>
       </div>
 
