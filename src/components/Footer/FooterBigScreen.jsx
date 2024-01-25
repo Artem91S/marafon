@@ -33,7 +33,7 @@ function FooterBigScreen() {
  
       <div className="flex flex-col gap-4">
         <p className=" text-btnColor/50 ">{t("description.PolisyConf")}</p>
-        <p className="text-btnColor/50 ">{t("description.PublickOffert")}</p>
+        <a href='https://marafon-rosy.vercel.app/offer-contract' target='_blank' className="text-btnColor/50 cursor-pointer ">{t("description.PublickOffert")}</a>
       </div>
       </div>
 
