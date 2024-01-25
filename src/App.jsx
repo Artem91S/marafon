@@ -16,7 +16,7 @@ function App() {
       <MainContainer>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/offer-contract" element={<OfferContract />} />
+          <Route path="https://marafon-rosy.vercel.app/offer-contract" element={<OfferContract />} />
         </Routes>
       </MainContainer>
       {isBigScreen ? <FooterBigScreen /> : <Footer />}
